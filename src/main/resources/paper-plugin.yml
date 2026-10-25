@@ -1,0 +1,16 @@
+name: chyarolib
+version: ${project.version}
+main: hr.chyaro.lib.ChyaroLib
+api-version: '1.21'
+description: Shared addon runtime, SQLite services, managed reloads, and server utilities.
+author: chyarogroup
+
+permissions:
+  chyarolib.admin:
+    description: Grants all chyarolib administrative permissions
+    default: op
+    children:
+      chyarolib.reload: true
+  chyarolib.reload:
+    description: Allows managed plugins and addons to be fully reloaded
+    default: op

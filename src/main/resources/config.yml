@@ -1,0 +1,25 @@
+# chyarolib Configuration
+download:
+  # The output directory relative to the server root ('.' for server root folder)
+  output-directory: "."
+  # The output filename for the downloaded Purpur server jar
+  output-filename: "server.jar"
+  # Whether to automatically check and download the latest Purpur build on server startup
+  auto-download-on-startup: false
+  # Connection timeout in seconds when querying Purpur API or downloading
+  connect-timeout-seconds: 15
+
+# GenSprout Modrinth Version Check Settings
+version-check:
+  enabled: true
+  project-slug: "gensprout"
+  modrinth-url: "https://modrinth.com/plugin/gensprout"
+  check-on-startup: true
+  connect-timeout-seconds: 15
+
+managed-reload:
+  cache-versions: 3
+  freeze-message: "<gold>[chyarolib]</gold> <yellow>This managed world is briefly paused while its addon reloads.</yellow>"
+
+database:
+  busy-timeout-millis: 10000
