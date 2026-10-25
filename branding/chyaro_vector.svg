@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="172" height="56" fill="none" viewBox="0 0 172 56">
+  <title>Available on chyaro.xyz</title>
+  <defs>
+    <linearGradient id="a" x1="86" x2="86" y1="0" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#181f29"/>
+      <stop offset="1" stop-color="#0f131a"/>
+    </linearGradient>
+    <!-- The chyaro.xyz "C": bright cyan at the top fading to near-black at the bottom -->
+    <linearGradient id="c" x1="36" x2="28" y1="9" y2="47" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12ecff"/>
+      <stop offset=".45" stop-color="#1a8fc4"/>
+      <stop offset="1" stop-color="#05070c"/>
+    </linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.8"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="172" height="56" fill="url(#a)" rx="8"/>
+  <rect width="169.9" height="53.9" x="1.05" y="1.05" stroke="#fff" stroke-opacity=".15" stroke-width="2.1" rx="6.95"/>
+  <!-- A faint light ring behind the C keeps its dark lower half visible on the dark badge -->
+  <path d="M42.3 17.7A14.5 14.5 0 1 0 42.3 38.3" stroke="#fff" stroke-opacity=".08" stroke-width="13"/>
+  <path filter="url(#s)" d="M42.3 17.7A14.5 14.5 0 1 0 42.3 38.3" stroke="url(#c)" stroke-width="11"/>
+  <g filter="url(#s)" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+    <text x="61" y="25" fill="#e8e8e8" font-size="15.5" font-weight="400">Available on</text>
+    <text x="61" y="44.5" fill="#22d8f2" font-size="18.5" font-weight="700">chyaro.xyz</text>
+  </g>
+</svg>
